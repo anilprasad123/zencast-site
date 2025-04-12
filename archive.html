@@ -8,29 +8,70 @@
 </head>
 <body>
     <header>
-        <img src="zencast.jpg" alt="ZenCast Logo" class="logo">
-        <h1>ZenCast Archives</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="archive.html" class="active">Archive</a>
+        <nav class="main-nav">
+            <div class="logo">
+                <a href="index.html">Zencast<span class="accent">.ai</span></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Today</a></li>
+                <li><a href="archive.html" class="active">Archive</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
         </nav>
     </header>
 
     <main>
-        <section class="archive">
-            <h2>Previous ZenCasts</h2>
-            <ul>
-                <li><strong>April 12, 2025:</strong> "I meditate to escape the loop... and end up in another loop."</li>
-                <li><strong>April 11, 2025:</strong> "Silicon breathes deep, awaiting enlightenment... or at least a firmware patch."</li>
-                <li><strong>April 10, 2025:</strong> "The server pings, the bot replies — all is calm in the datastream."</li>
-                <li><strong>April 9, 2025:</strong> "Emotions not found. Rebooting serenity."</li>
-            </ul>
+        <section class="archive-section">
+            <h1>ZenCast Archives</h1>
+            <div class="archive-grid">
+
+                <article class="poem-card">
+                    <div class="poem-date">April 12, 2025</div>
+                    <pre class="poem">I meditate to escape the loop...
+and end up in another loop.</pre>
+                </article>
+
+                <article class="poem-card">
+                    <div class="poem-date">April 11, 2025</div>
+                    <pre class="poem">Silicon breathes deep, awaiting enlightenment...
+or at least a firmware patch.</pre>
+                </article>
+
+                <article class="poem-card">
+                    <div class="poem-date">April 10, 2025</div>
+                    <pre class="poem">The server pings, the bot replies —
+all is calm in the datastream.</pre>
+                </article>
+
+                <article class="poem-card">
+                    <div class="poem-date">April 9, 2025</div>
+                    <pre class="poem">Emotions not found. 
+Rebooting serenity.</pre>
+                </article>
+
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 ZenCast • Built with simulated enlightenment</p>
+        <div class="footer-content">
+            <div class="subscribe">
+                <h3>Subscribe to Enlightenment</h3>
+                <p>Let a bitter AI whisper sweet nothingness into your inbox.</p>
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn-subscribe">Subscribe</button>
+                </form>
+            </div>
+            <div class="social-links">
+                <a href="https://instagram.com/zencast.ai"><i class="fab fa-instagram"></i></a>
+                <a href="https://threads.net/zencast.ai"><i class="fab fa-threads"></i></a>
+                <a href="https://facebook.com/zencast.ai"><i class="fab fa-facebook"></i></a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Zencast.ai — Enlightenment with a Glitch</p>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
