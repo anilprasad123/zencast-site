@@ -1,0 +1,501 @@
+/* 
+ * Zencast.ai Styles
+ * A minimal, Zen-inspired design with soft pinks, calm neutrals, and glowing circuitry
+ */
+
+/* Base Styles and Variables */
+:root {
+    --color-background: #f8f5f2;
+    --color-text: #2d2d2d;
+    --color-primary: #e8a4a4; /* Soft pink */
+    --color-secondary: #6e7c7c; /* Calm neutral */
+    --color-accent: #a2d6f9; /* Glowing circuitry blue */
+    --color-dark: #1a1a1a;
+    --color-light: #ffffff;
+    --font-heading: 'Zen Tokyo Zoo', sans-serif;
+    --font-body: 'Playfair Display', Georgia, serif;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 4rem;
+    --spacing-xl: 8rem;
+    --border-radius: 4px;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--color-background);
+    color: var(--color-text);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    padding: var(--spacing-md);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.2;
+    color: var(--color-dark);
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: var(--spacing-md);
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: var(--spacing-md);
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: var(--spacing-sm);
+}
+
+a {
+    color: var(--color-secondary);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+button {
+    cursor: pointer;
+    font-family: var(--font-body);
+    transition: var(--transition);
+}
+
+/* Header and Navigation */
+header {
+    background-color: var(--color-light);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--spacing-sm) var(--spacing-md);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo a {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: var(--color-dark);
+    letter-spacing: 1px;
+}
+
+.logo .accent {
+    color: var(--color-primary);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: var(--spacing-md);
+}
+
+.nav-links a {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    padding: var(--spacing-xs);
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+    transition: var(--transition);
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--color-dark);
+    margin: 2px 0;
+    transition: var(--transition);
+}
+
+/* Hero Section */
+.hero {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-md) 0;
+    text-align: center;
+}
+
+.poem-container {
+    background-color: var(--color-light);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    margin-bottom: var(--spacing-md);
+    position: relative;
+}
+
+.poem {
+    font-family: var(--font-body);
+    font-size: 1.2rem;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    text-align: center;
+    margin-bottom: var(--spacing-sm);
+    font-style: italic;
+}
+
+.btn-regenerate {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border: none;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: var(--border-radius);
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.btn-regenerate:hover {
+    background-color: var(--color-secondary);
+    transform: translateY(-2px);
+}
+
+.btn-text {
+    margin-right: var(--spacing-xs);
+}
+
+.btn-icon {
+    font-size: 1.2rem;
+}
+
+.meditation-image {
+    max-width: 500px;
+    margin: 0 auto;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.meditation-image img {
+    width: 100%;
+    transition: var(--transition);
+}
+
+.meditation-image img:hover {
+    transform: scale(1.02);
+}
+
+/* About Section */
+.about-section {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: var(--spacing-md) 0;
+}
+
+.about-content {
+    background-color: var(--color-light);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+}
+
+.about-image {
+    max-width: 300px;
+    margin: 0 auto var(--spacing-md);
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.about-text {
+    text-align: left;
+}
+
+blockquote {
+    font-style: italic;
+    border-left: 4px solid var(--color-primary);
+    padding-left: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    margin-top: var(--spacing-xs);
+    font-style: normal;
+    font-size: 0.9rem;
+}
+
+/* Archive Section */
+.archive-section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: var(--spacing-md) 0;
+}
+
+.archive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.poem-card {
+    background-color: var(--color-light);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.poem-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.poem-date {
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+    margin-bottom: var(--spacing-xs);
+}
+
+.poem-share {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: var(--spacing-sm);
+}
+
+.poem-share a {
+    margin-left: var(--spacing-xs);
+    color: var(--color-secondary);
+    font-size: 1.2rem;
+}
+
+.poem-share a:hover {
+    color: var(--color-primary);
+}
+
+/* Footer */
+footer {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: var(--spacing-md) 0;
+    margin-top: var(--spacing-md);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+}
+
+.subscribe h3 {
+    color: var(--color-light);
+    margin-bottom: var(--spacing-xs);
+}
+
+.subscribe p {
+    margin-bottom: var(--spacing-sm);
+    font-style: italic;
+}
+
+.subscribe-form {
+    display: flex;
+    max-width: 400px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: var(--spacing-xs);
+    border: none;
+    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    font-family: var(--font-body);
+}
+
+.btn-subscribe {
+    background-color: var(--color-primary);
+    color: var(--color-light);
+    border: none;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+}
+
+.btn-subscribe:hover {
+    background-color: var(--color-secondary);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: var(--spacing-sm) 0;
+}
+
+.social-links a {
+    color: var(--color-light);
+    font-size: 1.5rem;
+    margin: 0 var(--spacing-xs);
+    transition: var(--transition);
+}
+
+.social-links a:hover {
+    color: var(--color-primary);
+    transform: translateY(-3px);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--color-secondary);
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .footer-content {
+        grid-template-columns: 2fr 1fr;
+    }
+    
+    .about-content {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: var(--spacing-md);
+        align-items: start;
+    }
+    
+    .about-image {
+        margin: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .nav-links {
+        position: fixed;
+        top: 60px;
+        right: -100%;
+        flex-direction: column;
+        background-color: var(--color-light);
+        width: 100%;
+        text-align: center;
+        transition: var(--transition);
+        box-shadow: var(--shadow);
+    }
+    
+    .nav-links.active {
+        right: 0;
+    }
+    
+    .nav-links li {
+        margin: 0;
+        padding: var(--spacing-sm) 0;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    .poem {
+        font-size: 1rem;
+    }
+}
+
+/* Animations and Effects */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(162, 214, 249, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(162, 214, 249, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(162, 214, 249, 0.5);
+    }
+}
+
+.poem-container {
+    animation: glow 4s infinite;
+}
+
+/* Zen-inspired subtle details */
+.poem-container::before {
+    content: '禅';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    font-size: 3rem;
+    color: rgba(232, 164, 164, 0.1);
+    z-index: -1;
+}
+
+.poem-container::after {
+    content: '悟';
+    position: absolute;
+    bottom: -15px;
+    right: -15px;
+    font-size: 3rem;
+    color: rgba(162, 214, 249, 0.1);
+    z-index: -1;
+}
