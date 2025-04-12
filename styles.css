@@ -499,23 +499,3 @@ footer {
     color: rgba(162, 214, 249, 0.1);
     z-index: -1;
 }
-
-/* Homepage custom layout tweaks */
-.layout-flex {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.right-align {
-    align-self: flex-end;
-    margin-top: 1rem;
-}
-
-.meditation-image.small {
-    max-width: 300px;
-    margin: 2rem auto 0;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: var(--shadow);
-}

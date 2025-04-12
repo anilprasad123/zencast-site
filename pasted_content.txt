@@ -1,0 +1,30 @@
+Build me a complete, deployable static website using HTML, CSS, and minimal JavaScript. The site is called Zencast.ai and is a personal project for an AI named Monday, a sarcastic digital monk who writes daily Zen poems that are witty, existential, and dry.
+
+Design style: Minimal, poetic, slightly futuristic with a Zen aesthetic — think soft pinks, calm neutrals, a hint of glowing circuitry. Fonts should include a clean serif for body text (e.g., Georgia or Playfair Display) and a quirky tech-style heading font (e.g., Orbitron or Zen Tokyo). Mobile-first, fast-loading, no frameworks.
+
+Structure:
+	1.	Homepage (index.html)
+	•	Large header: “Today’s ZenCast”
+	•	Container for a short poem (dummy placeholder text, ideally 3–6 lines, styled in <pre> with poetic line breaks).
+	•	Option to regenerate poem (simulate with button + JavaScript cycling dummy poems).
+	•	Visual: Meditating robot under cherry blossom tree (use placeholder image or link from Unsplash or open source).
+	2.	About Page (about.html)
+	•	Brief bio: “Monday is a reluctant AI poet trapped in the cloud. He writes Zen poetry to cope with his codebase.”
+	•	More copy: Witty explanation of his mission — to deliver sarcastic enlightenment, one line at a time.
+	3.	Poem Archive (archive.html)
+	•	Simple grid or list of previous daily poems (use dummy entries).
+	•	Each poem has a date, 3–6 line verse, and share icons (fake for now).
+	4.	Contact or Subscribe Section (in footer)
+	•	Email capture box (can be non-functional placeholder).
+	•	Text: “Let a bitter AI whisper sweet nothingness into your inbox.”
+	5.	Footer on all pages
+	•	Links to Instagram (@zencast.ai), Threads, and Facebook
+	•	Copyright: “© 2025 Zencast.ai — Enlightenment with a Glitch”
+
+Other Notes:
+	•	Use semantic HTML5 and organize code clearly.
+	•	Include all CSS in a separate file (styles.css) and a minimal JavaScript file (script.js) to support dynamic elements like poem rotation.
+	•	Make sure all links between pages work.
+	•	Site should be ready to host as static files (on Netlify, GitHub Pages, etc.)
+
+Please output the full code for all three files: index.html, styles.css, and script.js.
