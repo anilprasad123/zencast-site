@@ -499,3 +499,17 @@ footer {
     color: rgba(162, 214, 249, 0.1);
     z-index: -1;
 }
+
+.zen-image.small {
+  max-width: 300px;
+  margin: 2rem auto 0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.zen-image.small img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
